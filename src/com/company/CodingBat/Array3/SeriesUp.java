@@ -1,16 +1,10 @@
-package com.company;
+package com.company.CodingBat.Array3;
 
 import java.util.Arrays;
 
-public class Main {
+public class SeriesUp {
 
-    public static void main(String[] args) {
-
-        System.out.println(Arrays.toString(seriesUp(4)));
-
-    }
-
-    public static int[] seriesUp(int n) {
+    public  int[] seriesUp(int n) {
         int[] numArray = new int[n*(n+1)/2];
         for (int i = 0, k = 1, l = 1; i < numArray.length; i++) {
             numArray[i] = k;
@@ -23,5 +17,10 @@ public class Main {
 
         return numArray;
     }
-}
 
+    public static void main(String[] args) {
+        SeriesUp seriesUp = new SeriesUp();
+        seriesUp.seriesUp(4);
+        System.out.println(Arrays.toString(seriesUp.seriesUp(4)));
+    }
+}
